@@ -1,0 +1,29 @@
+# Dependencies
+/node_modules
+
+# Production build (generated; published to gh-pages by `yarn deploy`)
+/build
+
+# Misc / OS / editor
+.DS_Store
+.idea/
+.codemap/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Legacy Flash/ActionScript template ignores (kept from original template)
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+.settings/
+*.swf
+*.air
+*.ipa
+*.apk
