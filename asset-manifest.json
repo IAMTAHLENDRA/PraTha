@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PraTha/static/css/main.47638ba4.css",
+    "main.js": "/PraTha/static/js/main.1a35183f.js",
+    "index.html": "/PraTha/index.html",
+    "main.47638ba4.css.map": "/PraTha/static/css/main.47638ba4.css.map",
+    "main.1a35183f.js.map": "/PraTha/static/js/main.1a35183f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47638ba4.css",
+    "static/js/main.1a35183f.js"
+  ]
+}
