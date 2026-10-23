@@ -1,0 +1,38 @@
+/* A screen-high layer that sticks to the viewport while you scroll through
+   its parent (everything after the hero), so flowers keep raining over every
+   section but never over the hero. margin-bottom pulls the sections back up
+   underneath it. */
+.petals {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  margin-bottom: -100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.petal {
+  position: absolute;
+  top: -8%;
+  will-change: transform, opacity;
+  animation-name: petal-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(var(--drift, 40px), 110vh, 0) rotate(320deg);
+  }
+}
+
+/* Tablets and desktops only — phones (under 768px wide) stay clear. */
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .petals {
+    display: none;
+  }
+}

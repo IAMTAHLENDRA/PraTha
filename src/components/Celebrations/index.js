@@ -6,15 +6,8 @@ import Photo from "../Photo";
 
 const TBA = "To be announced";
 
-const directionsUrl = (event) =>
-  event.mapUrl ||
-  (event.venue
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.venue)}`
-    : null);
-
 const EventCard = ({ event }) => {
   const [ref, visible] = useReveal();
-  const mapUrl = directionsUrl(event);
   const dress = event.dressCode;
 
   return (
@@ -42,14 +35,7 @@ const EventCard = ({ event }) => {
           </div>
           <div>
             <dt>Where</dt>
-            <dd>
-              {event.venue || TBA}
-              {mapUrl && (
-                <a className="event-map" href={mapUrl} target="_blank" rel="noopener noreferrer">
-                  Get directions →
-                </a>
-              )}
-            </dd>
+            <dd>{event.venue || TBA}</dd>
           </div>
         </dl>
 
@@ -57,16 +43,7 @@ const EventCard = ({ event }) => {
           <span className="event-dress-label">Dress code</span>
           {dress ? (
             <>
-              <div className="event-dress-who">
-                <div>
-                  <b>For boys</b>
-                  <p>{dress.boys}</p>
-                </div>
-                <div>
-                  <b>For girls</b>
-                  <p>{dress.girls}</p>
-                </div>
-              </div>
+              <p>{dress.text}</p>
               {dress.colors && (
                 <div className="event-swatches" aria-hidden="true">
                   {dress.colors.map((c) => (

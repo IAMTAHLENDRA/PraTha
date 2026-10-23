@@ -5,16 +5,20 @@ import Celebrations from './components/Celebrations';
 import MiniCountdown from './components/MiniCountdown';
 import Footer from './components/Footer';
 import MusicToggle from './components/MusicToggle';
+import Petals from './components/Petals';
 
 function App() {
   return (
     <>
       <main>
         <Hero />
-        <Celebrations />
-        <Countdown />
+        <div className="after-hero">
+          <Petals count={18} />
+          <Celebrations />
+          <Countdown />
+          <Footer />
+        </div>
       </main>
-      <Footer />
       <MiniCountdown />
       <MusicToggle />
     </>

@@ -40,9 +40,8 @@ export const wedding = {
 
 // THE CELEBRATIONS — one card per event, shown in this order.
 // date / time / venue left as "" show "To be announced".
-// mapUrl is optional; without it, "Get directions" searches the venue name.
 // theme: short dress-code theme shown as a badge on the photo.
-// dressCode: boys / girls outfit text, optional note and swatch colours.
+// dressCode: outfit text (same for everyone), optional note and swatch colours.
 //   Leave dressCode as null to show "To be announced".
 // accent / tint: the card's colour (accent for text & bars, tint for background).
 export const events = [
@@ -51,13 +50,11 @@ export const events = [
     name: "Pooja & Engagement",
     theme: "Pink Grace",
     tagline: "Seeking blessings together, then rings and a lot of happy tears.",
-    date: "23 November 2026",
-    time: "", // TODO
-    venue: "", // TODO
-    mapUrl: "",
+    date: "Monday, 23 November 2026",
+    time: "1:00 PM",
+    venue: "Royal Banquet Hall, Dream Point Hotel",
     dressCode: {
-      boys: "Pink outfit (any style)",
-      girls: "Pink outfit (any style)",
+      text: "Pink outfit (any style)",
       colors: ["#f8bbd0", "#f06292", "#c2185b"],
     },
     photo: "engagement.jpg", // TODO
@@ -69,13 +66,11 @@ export const events = [
     name: "Sangeet",
     theme: "Any Colour",
     tagline: "Come ready to dance — the families have been practising.",
-    date: "23 November 2026",
-    time: "", // TODO
-    venue: "", // TODO
-    mapUrl: "",
+    date: "Monday, 23 November 2026",
+    time: "5:30 PM",
+    venue: "Lawn, Dream Point Hotel",
     dressCode: {
-      boys: "Any colour outfit (any style)",
-      girls: "Any colour outfit (any style)",
+      text: "Any colour outfit (any style)",
       colors: ["#5b2a86", "#1f3c88", "#c2185b", "#2bb3a3", "#f7b500"],
     },
     photo: "sangeet.jpg", // TODO
@@ -87,13 +82,11 @@ export const events = [
     name: "Haldi Carnival",
     theme: "Pastel Party",
     tagline: "Games, music, turmeric and zero dignity. Wear something you don't mind getting yellow!",
-    date: "24 November 2026",
-    time: "", // TODO
-    venue: "", // TODO
-    mapUrl: "",
+    date: "Tuesday, 24 November 2026",
+    time: "9:00 AM",
+    venue: "Lawn, Dream Point Hotel",
     dressCode: {
-      boys: "Pastel colour outfit (any style)",
-      girls: "Pastel colour outfit (any style)",
+      text: "Pastel colour outfit (any style)",
       note: "Choose any pastel shade!",
       colors: [
         "#b9e4c9", "#d4c4f0", "#fcc79a", "#f7a9b8", "#fbe39a",
@@ -107,12 +100,14 @@ export const events = [
   {
     key: "wedding",
     name: "Wedding & Reception",
-    tagline: "Seven pheras, one forever — then dinner and celebration as Mr & Mrs.",
-    date: "24 November 2026",
+    theme: "Come As You Are",
+    tagline: "Seven pheras, one forever — we seek your blessings as we begin our new journey, then dinner and celebration as Mr & Mrs.",
+    date: "Tuesday, 24 November 2026",
     time: "8:00 PM",
-    venue: "", // TODO
-    mapUrl: "",
-    dressCode: null, // TODO
+    venue: "Lawn, Dream Point Hotel",
+    dressCode: {
+      text: "No dress code — wear whatever makes you feel your best!",
+    },
     photo: "wedding.jpg", // TODO
     accent: "#b3122e",
     tint: "#fdecee",
