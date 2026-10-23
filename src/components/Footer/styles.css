@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 80px 20px 56px;
+  text-align: center;
+  background: var(--ivory);
+}
+
+.footer-venue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-pin {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  color: var(--white);
+  background: linear-gradient(140deg, var(--rose-mid), var(--rose-deep));
+  box-shadow: 0 10px 24px rgba(193, 65, 107, 0.3);
+}
+.footer-pin svg {
+  width: 26px;
+  height: 26px;
+}
+
+.footer-venue-name {
+  font-size: clamp(30px, 6vw, 44px);
+}
+
+.footer-address {
+  max-width: 320px;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.footer-btn {
+  margin-top: 8px;
+  padding: 13px 28px;
+  border-radius: 999px;
+  background: var(--rose-deep);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.footer-btn:hover {
+  background: var(--wine);
+}
+
+.footer-insta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--wine);
+  text-decoration: none;
+}
+
+/* Instagram's gradient behind a white glyph. */
+.footer-insta-logo {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  color: var(--white);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.footer-insta-logo svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-sign {
+  font-family: var(--font-script);
+  font-size: 34px;
+  color: var(--rose-deep);
+}

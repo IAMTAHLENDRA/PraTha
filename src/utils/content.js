@@ -17,6 +17,18 @@ export const couple = {
   heroFocus: "62% 62%", // keeps both of you in frame on phones and wide screens
 };
 
+// Venue and Instagram — shown in the footer at the bottom of the page.
+export const venue = {
+  name: "Dream Point Hotel",
+  address: "Neem Path, Janjgir, Janjgir-Champa, Chhattisgarh 495668",
+  mapUrl: "https://maps.app.goo.gl/3pdM6URxpiczykqR7",
+};
+
+export const instagram = {
+  handle: "the_pratha_tales",
+  url: "https://www.instagram.com/the_pratha_tales/",
+};
+
 // The big day — powers the live countdown.
 export const wedding = {
   // 24 November 2026, 11:00 PM (local). Format: YYYY-MM-DDTHH:MM:SS
