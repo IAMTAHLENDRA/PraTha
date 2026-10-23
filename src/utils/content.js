@@ -114,5 +114,34 @@ export const events = [
   },
 ];
 
+// OUR MOMENTS gallery — one tab per album. Photos live in
+// public/photos/gallery/ (resized to ~1600px so they load fast on phones).
+// focus is optional: CSS object-position for the square-ish grid crop.
+export const gallery = [
+  {
+    key: "roka",
+    label: "Roka",
+    photos: [
+      { src: "gallery/roka-1.jpg" },
+      { src: "gallery/roka-2.jpg" },
+      { src: "gallery/roka-3.jpg" },
+      { src: "gallery/roka-4.jpg" },
+    ],
+  },
+  {
+    key: "prewed",
+    label: "Pre-wedding",
+    photos: [
+      { src: "gallery/prewed-1.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-2.jpg", focus: "50% 60%" },
+      { src: "gallery/prewed-3.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-4.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-5.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-6.jpg" },
+      { src: "gallery/prewed-7.jpg" },
+    ],
+  },
+];
+
 export const photoUrl = (name) =>
   name ? `${process.env.PUBLIC_URL}/photos/${name}` : null;

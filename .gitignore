@@ -4,6 +4,9 @@
 # Production build (generated; published to gh-pages by `yarn deploy`)
 /build
 
+# Original full-size photos (resized copies live in public/photos/gallery/)
+/photos/
+
 # Misc / OS / editor
 .DS_Store
 .idea/
