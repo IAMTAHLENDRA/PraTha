@@ -31,8 +31,9 @@ export const instagram = {
 
 // The big day — powers the live countdown.
 export const wedding = {
-  // 24 November 2026, 11:00 PM (local). Format: YYYY-MM-DDTHH:MM:SS
-  date: "2026-11-24T23:00:00",
+  // 24 November 2026, 8:00 PM India time (+05:30), so guests abroad see
+  // the same countdown. Format: YYYY-MM-DDTHH:MM:SS+05:30
+  date: "2026-11-24T20:00:00+05:30",
   title: "Counting down to forever",
   subtitle: "Until Pranjali & Thalendra say “I do”",
 };
@@ -108,7 +109,7 @@ export const events = [
     name: "Wedding & Reception",
     tagline: "Seven pheras, one forever — then dinner and celebration as Mr & Mrs.",
     date: "24 November 2026",
-    time: "11:00 PM", // TODO: confirm muhurat
+    time: "8:00 PM",
     venue: "", // TODO
     mapUrl: "",
     dressCode: null, // TODO
