@@ -1,9 +1,20 @@
 :root {
-  --rose: #e91e63;
-  --rose-deep: #c2185b;
-  --wine: #6d1b3b;
-  --blush: #fde4ec;
-  --ivory: #fffaf5;
+  /* Pink & Rose palette — shared with ../couple-gift */
+  --blush: #fff0f3;
+  --blush-deep: #fcd9e1;
+  --rose: #f4a6b8;
+  --rose-mid: #e8879a;
+  --rose-deep: #c1416b;
+  --wine: #7a2e44;
+  --gold: #d9a45b;
+  --gold-soft: #ebcb93;
+  --ivory: #fff8f4;
+  --ink: #4a2c36;
+  --white: #fff;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 * {
@@ -11,32 +22,66 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-body);
   background: linear-gradient(160deg, var(--ivory), var(--blush));
   color: var(--wine);
 }
 
-.placeholder {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
-  text-align: center;
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.12;
+  color: var(--wine);
 }
 
-.placeholder__title {
-  font-family: 'Great Vibes', cursive;
-  font-weight: 400;
-  font-size: clamp(4rem, 15vw, 8rem);
+/* Shared scroll-reveal — pair with the useReveal hook. */
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.section-eyebrow {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 12px;
+  font-weight: 600;
   color: var(--rose-deep);
+  opacity: 0.85;
+}
+.section-title {
+  font-size: clamp(30px, 5vw, 52px);
+  margin-top: 10px;
 }
 
-.placeholder__subtitle {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: clamp(1.2rem, 4vw, 1.8rem);
+/* Thin gold divider used under section titles. */
+.gold-rule {
+  display: block;
+  width: 64px;
+  height: 1px;
+  background: var(--gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

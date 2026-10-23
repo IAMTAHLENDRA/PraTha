@@ -1,11 +1,19 @@
 import './App.css';
+import Hero from './components/Hero';
+import Countdown from './components/Countdown';
+import Celebrations from './components/Celebrations';
+import MiniCountdown from './components/MiniCountdown';
 
 function App() {
   return (
-    <main className="placeholder">
-      <h1 className="placeholder__title">PraTha</h1>
-      <p className="placeholder__subtitle">Something beautiful is on its way 💕</p>
-    </main>
+    <>
+      <main>
+        <Hero />
+        <Countdown />
+        <Celebrations />
+      </main>
+      <MiniCountdown />
+    </>
   );
 }
 

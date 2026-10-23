@@ -1,0 +1,98 @@
+.mini-cd {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 850;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 13px;
+  border-radius: 14px;
+  color: var(--white);
+  font-family: var(--font-body);
+  background: linear-gradient(140deg, var(--rose-mid), var(--rose-deep));
+  box-shadow: 0 8px 20px rgba(193, 65, 107, 0.35);
+  animation: mini-cd-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes mini-cd-in {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mini-cd-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.92;
+}
+.mini-cd-ring {
+  font-size: 11px;
+}
+
+.mini-cd-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+  font-variant-numeric: tabular-nums;
+}
+
+.mini-cd-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  min-width: 20px;
+}
+.mini-cd-cell b {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 600;
+}
+.mini-cd-cell i {
+  font-style: normal;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+.mini-cd-sep {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.6;
+  margin-top: 1px;
+}
+
+.mini-cd-arrived {
+  font-family: var(--font-script);
+  font-size: 20px;
+}
+
+@media (max-width: 420px) {
+  .mini-cd {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+  }
+  .mini-cd-cell b {
+    font-size: 16px;
+  }
+  .mini-cd-cell {
+    min-width: 17px;
+  }
+  .mini-cd-label {
+    font-size: 8px;
+  }
+}
