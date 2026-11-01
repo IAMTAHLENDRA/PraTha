@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PraTha/static/css/main.f9eceeca.css",
-    "main.js": "/PraTha/static/js/main.b7a0f0df.js",
+    "main.js": "/PraTha/static/js/main.259bd490.js",
     "index.html": "/PraTha/index.html",
     "main.f9eceeca.css.map": "/PraTha/static/css/main.f9eceeca.css.map",
-    "main.b7a0f0df.js.map": "/PraTha/static/js/main.b7a0f0df.js.map"
+    "main.259bd490.js.map": "/PraTha/static/js/main.259bd490.js.map"
   },
   "entrypoints": [
     "static/css/main.f9eceeca.css",
-    "static/js/main.b7a0f0df.js"
+    "static/js/main.259bd490.js"
   ]
 }
