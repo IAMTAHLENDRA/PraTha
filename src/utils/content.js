@@ -132,25 +132,33 @@ export const gallery = [
     key: "prewed",
     label: "Pre-wedding",
     photos: [
+      // Pink lehenga, palace
       { src: "gallery/prewed-1.jpg", focus: "50% 78%" },
       { src: "gallery/prewed-2.jpg", focus: "50% 60%" },
+      // Purple saree, lake pavilion
+      { src: "gallery/prewed-6.jpg" },
+      { src: "gallery/prewed-7.jpg" },
+      // Peach kurtas, white pavilion
+      { src: "gallery/prewed-9.jpg", focus: "50% 70%" },
+      { src: "gallery/prewed-10.jpg", focus: "50% 78%" },
+      // Red silk saree, temple
+      { src: "gallery/prewed-8.jpg" },
+      { src: "gallery/prewed-18.jpg" },
+      { src: "gallery/prewed-19.jpg" },
+      // Old-city streets
+      { src: "gallery/prewed-14.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-15.jpg", focus: "50% 78%" },
+      // Red convertible, whites
       { src: "gallery/prewed-3.jpg", focus: "50% 78%" },
       { src: "gallery/prewed-4.jpg", focus: "50% 78%" },
       { src: "gallery/prewed-5.jpg", focus: "50% 78%" },
-      { src: "gallery/prewed-6.jpg" },
-      { src: "gallery/prewed-7.jpg" },
-      { src: "gallery/prewed-8.jpg" },
-      { src: "gallery/prewed-9.jpg", focus: "50% 70%" },
-      { src: "gallery/prewed-10.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-16.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-17.jpg" },
+      // Blue gown, white desert
       { src: "gallery/prewed-11.jpg", focus: "50% 78%" },
       { src: "gallery/prewed-12.jpg" },
       { src: "gallery/prewed-13.jpg" },
-      { src: "gallery/prewed-14.jpg", focus: "50% 78%" },
-      { src: "gallery/prewed-15.jpg", focus: "50% 78%" },
-      { src: "gallery/prewed-16.jpg", focus: "50% 78%" },
-      { src: "gallery/prewed-17.jpg" },
-      { src: "gallery/prewed-18.jpg" },
-      { src: "gallery/prewed-19.jpg" },
+      // Lantern
       { src: "gallery/prewed-20.jpg" },
     ],
   },
