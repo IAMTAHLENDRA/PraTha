@@ -43,6 +43,7 @@ export const wedding = {
 // theme: short dress-code theme shown as a badge on the photo.
 // dressCode: outfit text (same for everyone), optional note and swatch colours.
 //   Leave dressCode as null to show "To be announced".
+// photo: shown in a 4:3 frame (pre-cropped to fit; originals in photos/posters/).
 // accent / tint: the card's colour (accent for text & bars, tint for background).
 export const events = [
   {
@@ -57,7 +58,7 @@ export const events = [
       text: "Pink outfit (any style)",
       colors: ["#f8bbd0", "#f06292", "#c2185b"],
     },
-    photo: "engagement.jpg", // TODO
+    photo: "engagement.jpg",
     accent: "#c2185b",
     tint: "#fdeef3",
   },
@@ -73,7 +74,7 @@ export const events = [
       text: "Any colour outfit (any style)",
       colors: ["#5b2a86", "#1f3c88", "#c2185b", "#2bb3a3", "#f7b500"],
     },
-    photo: "sangeet.jpg", // TODO
+    photo: "sangeet.jpg",
     accent: "#5b2a86",
     tint: "#f3ecfa",
   },
@@ -93,7 +94,7 @@ export const events = [
         "#a9cdf0", "#fde2b0", "#f9c6d3", "#b5e6ea", "#c9dfa6",
       ],
     },
-    photo: "haldi.jpg", // TODO
+    photo: "haldi.jpg",
     accent: "#b07400",
     tint: "#fff7e0",
   },
@@ -108,7 +109,7 @@ export const events = [
     dressCode: {
       text: "No dress code — wear whatever makes you feel your best!",
     },
-    photo: "wedding.jpg", // TODO
+    photo: "wedding.jpg",
     accent: "#b3122e",
     tint: "#fdecee",
   },
