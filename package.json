@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "GH_TOKEN=$(gh auth token --user IAMTAHLENDRA) gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
