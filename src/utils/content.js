@@ -134,11 +134,10 @@ export const gallery = [
     label: "Pre-wedding",
     photos: [
       { src: "gallery/prewed-1.jpg", focus: "50% 78%" },
+      { src: "gallery/prewed-20.jpg", focus: "50% 72%" },
       { src: "gallery/prewed-2.jpg", focus: "50% 60%" },
       { src: "gallery/prewed-3.jpg", focus: "50% 78%" },
       { src: "gallery/prewed-4.jpg", focus: "50% 78%" },
-      { src: "gallery/prewed-5.jpg", focus: "50% 78%" },
-      { src: "gallery/prewed-6.jpg", focus: "50% 78%" },
       { src: "gallery/prewed-7.jpg" },
       { src: "gallery/prewed-8.jpg", focus: "50% 78%" },
       { src: "gallery/prewed-9.jpg" },
