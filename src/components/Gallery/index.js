@@ -85,7 +85,7 @@ const Gallery = () => {
         {photos.map((p, i) => (
           <button
             key={p.src}
-            className="gallery-cell"
+            className={`gallery-cell${p.wide ? " gallery-cell--wide" : ""}`}
             onClick={() => setActive(i)}
             aria-label={`Open ${label(i)}`}
           >
