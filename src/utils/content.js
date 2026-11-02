@@ -117,8 +117,7 @@ export const events = [
 
 // OUR MOMENTS gallery — one tab per album. Photos live in
 // public/photos/gallery/ (resized to ~1600px so they load fast on phones).
-// focus is optional: CSS object-position for the grid crop.
-// wide: true gives a landscape photo a wide 3:2 tile (for group shots).
+// focus is optional: CSS object-position for the square-ish grid crop.
 export const gallery = [
   {
     key: "roka",
@@ -127,8 +126,8 @@ export const gallery = [
       { src: "gallery/roka-1.jpg" },
       { src: "gallery/roka-2.jpg" },
       { src: "gallery/roka-3.jpg" },
-      { src: "gallery/roka-5.jpg", wide: true },
-      { src: "gallery/roka-6.jpg", wide: true },
+      { src: "gallery/roka-5.jpg" },
+      { src: "gallery/roka-6.jpg" },
       { src: "gallery/roka-4.jpg" },
     ],
   },

@@ -43,23 +43,16 @@
   color: var(--white);
 }
 
-/* Flex rows: 3 tiles per row (2 on phones). A "wide" photo gets a 3:2 tile
-   the width of 1.5 tiles (full width on phones) so group shots aren't cut.
-   A short last row is centred. */
 .gallery-grid {
-  --gap: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .gallery-cell {
   position: relative;
-  flex: none;
-  width: calc((100% - 2 * var(--gap)) / 3);
   aspect-ratio: 4 / 5;
   border: none;
   padding: 0;
@@ -68,10 +61,6 @@
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(193, 65, 107, 0.16);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.gallery-cell--wide {
-  width: calc((100% - var(--gap)) / 2);
-  aspect-ratio: 3 / 2;
 }
 .gallery-cell img {
   transition: transform 0.6s ease;
@@ -159,14 +148,11 @@
 
 @media (max-width: 640px) {
   .gallery-grid {
-    --gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   .gallery-cell {
-    width: calc((100% - var(--gap)) / 2);
     border-radius: 12px;
-  }
-  .gallery-cell--wide {
-    width: 100%;
   }
   .lb-img {
     max-width: 100%;
